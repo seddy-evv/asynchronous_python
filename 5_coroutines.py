@@ -1,6 +1,7 @@
 """
 Run example:
 python -i 5_coroutines.py
+g = average()
 g.send(5)
 g.send(1)
 try:
@@ -8,6 +9,7 @@ try:
 except StopIteration as e:
     print("Average", e.value)
 """
+
 
 def coroutine(func):
     def inner(*args, **kwargs):
@@ -25,6 +27,7 @@ def subgen():
 
 class CustomException(Exception):
     pass
+
 
 @coroutine
 def average():
