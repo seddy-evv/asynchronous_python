@@ -10,6 +10,7 @@ except StopIteration as e:
     print("Average", e.value)
 """
 
+
 def coroutine(func):
     def inner(*args, **kwargs):
         g = func(*args, **kwargs)
