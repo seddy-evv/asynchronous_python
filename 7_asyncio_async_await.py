@@ -1,5 +1,4 @@
 import asyncio
-from time import time
 
 
 async def print_nums():
